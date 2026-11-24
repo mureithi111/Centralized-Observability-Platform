@@ -1,0 +1,127 @@
+{
+    "services": [
+        {
+            "serviceArn": "arn:aws:ecs:us-east-1:<account-id>:service/observability-cluster/observability-api-service",
+            "serviceName": "observability-api-service",
+            "clusterArn": "arn:aws:ecs:us-east-1:<account-id>:cluster/observability-cluster",
+            "loadBalancers": [],
+            "serviceRegistries": [],
+            "status": "ACTIVE",
+            "desiredCount": 2,
+            "runningCount": 2,
+            "pendingCount": 0,
+            "launchType": "FARGATE",
+            "platformVersion": "LATEST",
+            "platformFamily": "Linux",
+            "taskDefinition": "arn:aws:ecs:us-east-1:<account-id>:task-definition/observability-api:1",
+            "deploymentConfiguration": {
+                "deploymentCircuitBreaker": {
+                    "enable": true,
+                    "rollback": true,
+                    "resetOnHealthyTask": true,
+                    "thresholdConfiguration": {
+                        "type": "BOUNDED_PERCENT",
+                        "value": 50
+                    }
+                },
+                "maximumPercent": 200,
+                "minimumHealthyPercent": 50,
+                "alarms": {
+                    "alarmNames": [],
+                    "rollback": false,
+                    "enable": false
+                },
+                "strategy": "ROLLING",
+                "bakeTimeInMinutes": 0
+            },
+            "deployments": [
+                {
+                    "id": "ecs-svc/9966164432403872794",
+                    "status": "PRIMARY",
+                    "taskDefinition": "arn:aws:ecs:us-east-1:<account-id>:task-definition/observability-api:1",
+                    "desiredCount": 2,
+                    "pendingCount": 0,
+                    "runningCount": 2,
+                    "failedTasks": 0,
+                    "createdAt": "2026-11-23T17:10:31.190000+03:00",
+                    "updatedAt": "2026-11-23T17:12:30.308000+03:00",
+                    "launchType": "FARGATE",
+                    "platformVersion": "1.4.0",
+                    "platformFamily": "Linux",
+                    "networkConfiguration": {
+                        "awsvpcConfiguration": {
+                            "subnets": [
+                                "subnet-0b1a37f22e8e76af1",
+                                "subnet-08f88583dfbf92cec"
+                            ],
+                            "securityGroups": [
+                                "sg-0662af85e457e0756"
+                            ],
+                            "assignPublicIp": "DISABLED"
+                        }
+                    },
+                    "rolloutState": "COMPLETED",
+                    "rolloutStateReason": "ECS deployment ecs-svc/9966164432403872794 completed."
+                }
+            ],
+            "roleArn": "arn:aws:iam::<account-id>:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+            "events": [
+                {
+                    "id": "4913852a-9374-4ad5-96bc-a74622f903a6",
+                    "createdAt": "2026-11-23T17:12:30.369000+03:00",
+                    "message": "(service observability-api-service) has reached a steady state."
+                },
+                {
+                    "id": "93cae0a4-15f3-4cdb-8644-c3752f864194",
+                    "createdAt": "2026-11-23T17:12:30.368000+03:00",
+                    "message": "(service observability-api-service) (deployment ecs-svc/9966164432403872794) deployment completed."
+                },
+                {
+                    "id": "15bf9cd4-961e-4f44-a844-46a9e723a437",
+                    "createdAt": "2026-11-23T17:11:08.635000+03:00",
+                    "message": "(service observability-api-service) has started 1 tasks: (task 87b55f1381ae4a798aa1a14807853dac)."
+                },
+                {
+                    "id": "6e07da72-032e-4e36-8634-cb43556ce039",
+                    "createdAt": "2026-11-23T17:10:49.364000+03:00",
+                    "message": "(service observability-api-service) has started 1 tasks: (task 75b97f6890074fe9bf040d3088284944)."
+                }
+            ],
+            "createdAt": "2026-11-23T17:10:31.190000+03:00",
+            "currentServiceRevisions": [
+                {
+                    "arn": "arn:aws:ecs:us-east-1:<account-id>:service-revision/observability-cluster/observability-api-service/9966164432403872794",
+                    "requestedTaskCount": 2,
+                    "runningTaskCount": 2,
+                    "pendingTaskCount": 0
+                }
+            ],
+            "placementConstraints": [],
+            "placementStrategy": [],
+            "networkConfiguration": {
+                "awsvpcConfiguration": {
+                    "subnets": [
+                        "subnet-0b1a37f22e8e76af1",
+                        "subnet-08f88583dfbf92cec"
+                    ],
+                    "securityGroups": [
+                        "sg-0662af85e457e0756"
+                    ],
+                    "assignPublicIp": "DISABLED"
+                }
+            },
+            "healthCheckGracePeriodSeconds": 0,
+            "schedulingStrategy": "REPLICA",
+            "deploymentController": {
+                "type": "ECS"
+            },
+            "createdBy": "arn:aws:iam::<account-id>:role/cdk-hnb659fds-cfn-exec-role-<account-id>-us-east-1",
+            "enableECSManagedTags": true,
+            "propagateTags": "NONE",
+            "enableExecuteCommand": false,
+            "availabilityZoneRebalancing": "ENABLED",
+            "resourceManagementType": "CUSTOMER"
+        }
+    ],
+    "failures": []
+}

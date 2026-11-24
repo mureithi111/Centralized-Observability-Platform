@@ -1,0 +1,516 @@
+{
+    "Subnets": [
+        {
+            "AvailabilityZoneId": "use1-az1",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account_id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "database"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/databaseSubnet1"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Isolated"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcdatabaseSubnet1Subnet9D9ED6DE"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-0b50e39e2d0301d46",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-0b50e39e2d0301d46",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.96.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1a",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false
+        },
+        {
+            "AvailabilityZoneId": "use1-az2",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/publicSubnet2"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "public"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcpublicSubnet2SubnetD5F3E389"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Public"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-06e2e8d6167863c16",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-06e2e8d6167863c16",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.16.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1b",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": true
+        },
+        {
+            "AvailabilityZoneId": "use1-az2",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/appSubnet2"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Private"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcappSubnet2Subnet73C25CE5"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "app"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-0b1a37f22e8e76af1",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-0b1a37f22e8e76af1",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.80.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1b",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false
+        },
+        {
+            "AvailabilityZoneId": "use1-az1",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/appSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcappSubnet1Subnet812D6222"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "app"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Private"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-08f88583dfbf92cec",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-08f88583dfbf92cec",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.64.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1a",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false
+        },
+        {
+            "AvailabilityZoneId": "use1-az1",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "web"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Private"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/webSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcwebSubnet1Subnet0FD35E70"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-0150894371dfe567c",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-0150894371dfe567c",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.32.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1a",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false
+        },
+        {
+            "AvailabilityZoneId": "use1-az2",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/databaseSubnet2"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "database"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcdatabaseSubnet2Subnet436B8FC2"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Isolated"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-0730778f042814691",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-0730778f042814691",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.112.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1b",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false
+        },
+        {
+            "AvailabilityZoneId": "use1-az1",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "public"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/publicSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcpublicSubnet1SubnetFD41B1AE"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Public"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-0e0cbe52757794358",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-0e0cbe52757794358",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.0.0/20",
+            "AvailableIpAddressCount": 4090,
+            "AvailabilityZone": "us-east-1a",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": true
+        },
+        {
+            "AvailabilityZoneId": "use1-az2",
+            "MapCustomerOwnedIpOnLaunch": false,
+            "OwnerId": "<account-id>",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws-cdk:subnet-name",
+                    "Value": "web"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws-cdk:subnet-type",
+                    "Value": "Private"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcwebSubnet2SubnetEC9BC54B"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/webSubnet2"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:<account-id>:subnet/subnet-0d608cafb8f06639b",
+            "EnableDns64": false,
+            "Ipv6Native": false,
+            "PrivateDnsNameOptionsOnLaunch": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "SubnetId": "subnet-0d608cafb8f06639b",
+            "State": "available",
+            "VpcId": "vpc-093d89686857756fa",
+            "CidrBlock": "10.30.48.0/20",
+            "AvailableIpAddressCount": 4091,
+            "AvailabilityZone": "us-east-1b",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false
+        }
+    ]
+}

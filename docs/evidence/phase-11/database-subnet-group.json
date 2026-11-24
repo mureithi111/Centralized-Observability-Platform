@@ -1,0 +1,32 @@
+{
+    "DBSubnetGroups": [
+        {
+            "DBSubnetGroupName": "observability-db-subnet-group",
+            "DBSubnetGroupDescription": "Isolated private subnets for the observability MySQL database",
+            "VpcId": "vpc-093d89686857756fa",
+            "SubnetGroupStatus": "Complete",
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-0730778f042814691",
+                    "SubnetAvailabilityZone": {
+                        "Name": "us-east-1b"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-0b50e39e2d0301d46",
+                    "SubnetAvailabilityZone": {
+                        "Name": "us-east-1a"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                }
+            ],
+            "DBSubnetGroupArn": "arn:aws:rds:us-east-1:<account-id>:subgrp:observability-db-subnet-group",
+            "SupportedNetworkTypes": [
+                "IPV4"
+            ]
+        }
+    ]
+}

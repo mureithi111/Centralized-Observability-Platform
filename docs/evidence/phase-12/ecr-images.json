@@ -1,0 +1,39 @@
+{
+    "imageDetails": [
+        {
+            "registryId": "<account-id>",
+            "repositoryName": "observability-api",
+            "imageDigest": "sha256:23855702154087cc3f087e2071dc12527d827cc1bbb25e1a2924d1444a98fca8",
+            "imageSizeInBytes": 1208,
+            "imagePushedAt": "2026-11-23T17:01:08.918000+03:00",
+            "imageManifestMediaType": "application/vnd.oci.image.manifest.v1+json",
+            "artifactMediaType": "application/vnd.docker.attestation.manifest.v1+json",
+            "subjectManifestDigest": "sha256:b3109f5cd9c396f1cf491a150d46c34b0936e0b94966c29ea88fc91781058340",
+            "imageStatus": "ACTIVE"
+        },
+        {
+            "registryId": "<account-id>",
+            "repositoryName": "observability-api",
+            "imageDigest": "sha256:b3109f5cd9c396f1cf491a150d46c34b0936e0b94966c29ea88fc91781058340",
+            "imageSizeInBytes": 88838980,
+            "imagePushedAt": "2026-11-23T17:01:08.935000+03:00",
+            "imageManifestMediaType": "application/vnd.oci.image.manifest.v1+json",
+            "artifactMediaType": "application/vnd.oci.image.config.v1+json",
+            "lastRecordedPullTime": "2026-11-23T17:10:59.757000+03:00",
+            "imageStatus": "ACTIVE"
+        },
+        {
+            "registryId": "<account-id>",
+            "repositoryName": "observability-api",
+            "imageDigest": "sha256:764a05faeed753d0ec63aafed9a03163460ad29569daefce976ae5bb5e2e9024",
+            "imageTags": [
+                "phase12"
+            ],
+            "imageSizeInBytes": 88838980,
+            "imagePushedAt": "2026-11-23T17:01:09.674000+03:00",
+            "imageManifestMediaType": "application/vnd.oci.image.index.v1+json",
+            "lastRecordedPullTime": "2026-11-23T17:10:59.866000+03:00",
+            "imageStatus": "ACTIVE"
+        }
+    ]
+}

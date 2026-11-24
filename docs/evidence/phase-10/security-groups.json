@@ -1,0 +1,326 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-00fd5982814f11d75",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "icmp",
+                    "FromPort": 252,
+                    "ToPort": 86,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Disallow all traffic",
+                            "CidrIp": "255.255.255.255/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityDatabaseSecurityGroup9AFE18AF"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:<account-id>:security-group/sg-00fd5982814f11d75",
+            "OwnerId": "<account-id>",
+            "GroupName": "observability-db-sg",
+            "Description": "RDS MySQL security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 3306,
+                    "ToPort": 3306,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow MySQL from ECS application tier",
+                            "UserId": "<account-id>",
+                            "GroupId": "sg-0662af85e457e0756"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0da01df4e3dc8d108",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Forward HTTP traffic to web tier",
+                            "UserId": "<account-id>",
+                            "GroupId": "sg-01cd4a70d6cc80e73"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityAlbSecurityGroup3FA1FF56"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:<account-id>:security-group/sg-0da01df4e3dc8d108",
+            "OwnerId": "<account-id>",
+            "GroupName": "observability-alb-sg",
+            "Description": "Internet-facing ALB security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow HTTP traffic",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow HTTPS traffic",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0662af85e457e0756",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 3306,
+                    "ToPort": 3306,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow MySQL connections",
+                            "UserId": "<account-id>",
+                            "GroupId": "sg-00fd5982814f11d75"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow HTTPS for AWS APIs and telemetry",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityAppSecurityGroupFFD4DADE"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:<account-id>:security-group/sg-0662af85e457e0756",
+            "OwnerId": "<account-id>",
+            "GroupName": "observability-app-sg",
+            "Description": "ECS application tier security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 8000,
+                    "ToPort": 8000,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow FastAPI traffic from web tier",
+                            "UserId": "<account-id>",
+                            "GroupId": "sg-01cd4a70d6cc80e73"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-012fc7f01c33e4453",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-093d89686857756fa",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:<account-id>:security-group/sg-012fc7f01c33e4453",
+            "OwnerId": "<account-id>",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": []
+        },
+        {
+            "GroupId": "sg-01cd4a70d6cc80e73",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 8000,
+                    "ToPort": 8000,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Forward traffic to FastAPI application",
+                            "UserId": "<account-id>",
+                            "GroupId": "sg-0662af85e457e0756"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "Allow HTTPS for SSM and AWS services",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityWebSecurityGroup585182A3"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:<account-id>:security-group/sg-01cd4a70d6cc80e73",
+            "OwnerId": "<account-id>",
+            "GroupName": "observability-web-sg",
+            "Description": "EC2 web tier security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow traffic from ALB",
+                            "UserId": "<account-id>",
+                            "GroupId": "sg-0da01df4e3dc8d108"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

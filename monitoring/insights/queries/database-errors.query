@@ -1,0 +1,4 @@
+fields @timestamp, level, event_type, @message
+| filter event_type = "database_error"
+| sort @timestamp desc
+| limit 100

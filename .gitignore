@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Docker
+*.log
+
+# Node/CDK
+node_modules/
+cdk.out/
+dist/
+coverage/
+
+# AWS
+.aws-sam/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+
+# Keep documented project evidence logs
+!docs/evidence/**/*.log

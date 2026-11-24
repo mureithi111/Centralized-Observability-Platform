@@ -1,0 +1,55 @@
+{
+    "NatGateways": [
+        {
+            "CreateTime": "2026-11-23T09:53:23+00:00",
+            "NatGatewayAddresses": [
+                {
+                    "AllocationId": "eipalloc-062beabb304257841",
+                    "NetworkInterfaceId": "eni-03628b4346d796bc6",
+                    "PrivateIp": "10.30.4.41",
+                    "PublicIp": "3.228.192.79",
+                    "AssociationId": "eipassoc-033ea446c62ddf386",
+                    "IsPrimary": true,
+                    "Status": "succeeded"
+                }
+            ],
+            "NatGatewayId": "nat-0d9e99900f0ff45ef",
+            "State": "available",
+            "SubnetId": "subnet-0e0cbe52757794358",
+            "VpcId": "vpc-093d89686857756fa",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcpublicSubnet1NATGateway215E9207"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/publicSubnet1"
+                }
+            ],
+            "ConnectivityType": "public",
+            "AvailabilityMode": "zonal",
+            "AttachedAppliances": []
+        }
+    ]
+}

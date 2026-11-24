@@ -1,0 +1,55 @@
+{
+    "Vpcs": [
+        {
+            "OwnerId": "<account-id>",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0a4aa4c82805858a3",
+                    "CidrBlock": "10.30.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "observability-vpc"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcD28C0927"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-093d89686857756fa",
+            "State": "available",
+            "CidrBlock": "10.30.0.0/16",
+            "DhcpOptionsId": "dopt-07866a3da35a701b2"
+        }
+    ]
+}

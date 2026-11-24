@@ -1,0 +1,4 @@
+fields @timestamp, status_code, method, path, @message
+| filter status_code >= 500
+| sort @timestamp desc
+| limit 100

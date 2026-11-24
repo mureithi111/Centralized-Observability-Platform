@@ -1,0 +1,505 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0a36a09f0510aed5e",
+                    "RouteTableId": "rtb-02fb777ab4f510c4c",
+                    "SubnetId": "subnet-0b1a37f22e8e76af1",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-02fb777ab4f510c4c",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-0d9e99900f0ff45ef",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcappSubnet2RouteTable6D6E1A7D"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/appSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-05b72a495ff9bb61c",
+                    "RouteTableId": "rtb-06fd608121eb7f4e2",
+                    "SubnetId": "subnet-08f88583dfbf92cec",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-06fd608121eb7f4e2",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-0d9e99900f0ff45ef",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcappSubnet1RouteTable222D9C55"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/appSubnet1"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-03d05299ba7be02df",
+                    "RouteTableId": "rtb-0b013f86cf16bb5bd",
+                    "SubnetId": "subnet-06e2e8d6167863c16",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0b013f86cf16bb5bd",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-0d2187dca2fdf1390",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcpublicSubnet2RouteTable737022E1"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/publicSubnet2"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0f6a743e26b775ec6",
+                    "RouteTableId": "rtb-0f1072bf4fe812072",
+                    "SubnetId": "subnet-0d608cafb8f06639b",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0f1072bf4fe812072",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-0d9e99900f0ff45ef",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/webSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcwebSubnet2RouteTableDE1D273F"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-04c593deea2c8a558",
+                    "RouteTableId": "rtb-06056289ab9406c76",
+                    "SubnetId": "subnet-0b50e39e2d0301d46",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-06056289ab9406c76",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/databaseSubnet1"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcdatabaseSubnet1RouteTable53C5C5DD"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": true,
+                    "RouteTableAssociationId": "rtbassoc-019f3f159d1c043d2",
+                    "RouteTableId": "rtb-0136d18b6f23f8c16",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0136d18b6f23f8c16",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                }
+            ],
+            "Tags": [],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0503e43ddaf70ccaa",
+                    "RouteTableId": "rtb-0dc319c6375bfca45",
+                    "SubnetId": "subnet-0150894371dfe567c",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0dc319c6375bfca45",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-0d9e99900f0ff45ef",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/webSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcwebSubnet1RouteTable4C7322A6"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-04dcc32d3f44316b7",
+                    "RouteTableId": "rtb-032d1027e37f76ecb",
+                    "SubnetId": "subnet-0730778f042814691",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-032d1027e37f76ecb",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/databaseSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcdatabaseSubnet2RouteTable88639CB1"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0d9fd9fec67691600",
+                    "RouteTableId": "rtb-0daa9541404956ee7",
+                    "SubnetId": "subnet-0e0cbe52757794358",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0daa9541404956ee7",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.30.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-0d2187dca2fdf1390",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "devops-capstone"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "ObservabilityNetworkStack"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "centralized-observability"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ObservabilityVpcpublicSubnet1RouteTable51E82188"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:<account-id>:stack/ObservabilityNetworkStack/8b532670-e723-11f1-8b6f-12fff9188dc7"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ObservabilityNetworkStack/ObservabilityVpc/publicSubnet1"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "AWS-CDK"
+                }
+            ],
+            "VpcId": "vpc-093d89686857756fa",
+            "OwnerId": "<account-id>"
+        }
+    ]
+}

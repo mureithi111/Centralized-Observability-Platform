@@ -1,0 +1,11 @@
+{
+  "name": "observability-remediation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EventBridge-triggered ECS remediation for centralized observability",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-ecs": "^3.900.0",
+    "@aws-sdk/client-sns": "^3.1176.0"
+  }
+}

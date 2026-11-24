@@ -1,0 +1,47 @@
+extensions:
+  health_check:
+    endpoint: 0.0.0.0:13133
+
+  sigv4auth/xray:
+    region: us-east-1
+    service: xray
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+processors:
+  memory_limiter:
+    check_interval: 1s
+    limit_mib: 384
+    spike_limit_mib: 96
+
+  batch:
+    timeout: 5s
+    send_batch_size: 512
+
+exporters:
+  otlp_http/xray:
+    compression: gzip
+    traces_endpoint: https://xray.us-east-1.amazonaws.com/v1/traces
+    auth:
+      authenticator: sigv4auth/xray
+
+service:
+  extensions:
+    - health_check
+    - sigv4auth/xray
+
+  pipelines:
+    traces:
+      receivers:
+        - otlp
+      processors:
+        - memory_limiter
+        - batch
+      exporters:
+        - otlp_http/xray

@@ -1,0 +1,67 @@
+{
+    "queryLanguage": "CWLI",
+    "results": [
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 10:14:02.249"
+            },
+            {
+                "field": "status_code",
+                "value": "500"
+            },
+            {
+                "field": "method",
+                "value": "GET"
+            },
+            {
+                "field": "path",
+                "value": "/simulate/database-error"
+            },
+            {
+                "field": "@message",
+                "value": "{\"timestamp\": \"2026-11-24 10:14:02,249\", \"level\": \"INFO\", \"logger\": \"centralized-observability-api\", \"message\": \"HTTP request completed\", \"otelSpanID\": \"84aaeceb766fb28c\", \"otelTraceID\": \"ed47ff9fb6806b2df99fcfcb084135ce\", \"otelTraceSampled\": true, \"otelServiceName\": \"centralized-observability-api\", \"event_type\": \"http_request\", \"method\": \"GET\", \"path\": \"/simulate/database-error\", \"status_code\": 500, \"duration_ms\": 118.45}"
+            },
+            {
+                "field": "@ptr",
+                "value": "CqYBCm0KIzM0NTU0OTM1NjI5MDovZWNzL29ic2VydmFiaWxpdHktYXBpEAAaJDAyODMzOTcwLTdiOTEtNDkzNC05Y2UxLTc4YzBmMmE4N2M0ZSIOCMvF+MWgNBDPorfuoDQ4ht798ZY0QMvF+MWgNEgAEjUaGAIGr9AVbgAAAAKhEQ4SAAawVjMAAAAA4iABKOSoseigNDDznrPooDQ4DkDZRkiYPVCDKxAGGAE="
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 10:14:01.573"
+            },
+            {
+                "field": "status_code",
+                "value": "500"
+            },
+            {
+                "field": "method",
+                "value": "GET"
+            },
+            {
+                "field": "path",
+                "value": "/simulate/error"
+            },
+            {
+                "field": "@message",
+                "value": "{\"timestamp\": \"2026-11-24 10:14:01,573\", \"level\": \"INFO\", \"logger\": \"centralized-observability-api\", \"message\": \"HTTP request completed\", \"otelSpanID\": \"6b92ef56a756b146\", \"otelTraceID\": \"f9723c7886b5a11c6c5fb2ea9cbe1923\", \"otelTraceSampled\": true, \"otelServiceName\": \"centralized-observability-api\", \"event_type\": \"http_request\", \"method\": \"GET\", \"path\": \"/simulate/error\", \"status_code\": 500, \"duration_ms\": 0.95}"
+            },
+            {
+                "field": "@ptr",
+                "value": "CqYBCm0KIzM0NTU0OTM1NjI5MDovZWNzL29ic2VydmFiaWxpdHktYXBpEAAaJDAyODMzOTcwLTdiOTEtNDkzNC05Y2UxLTc4YzBmMmE4N2M0ZSIOCMvF+MWgNBDPorfuoDQ4ht798ZY0QMvF+MWgNEgAEjUaGAIGr9AVbgAAAAKhEQ4SAAawVjMAAAAA4iABKOSoseigNDDznrPooDQ4DkDZRkiYPVCDKxACGAE="
+            }
+        ]
+    ],
+    "statistics": {
+        "recordsMatched": 2.0,
+        "recordsScanned": 22219.0,
+        "estimatedRecordsSkipped": 0.0,
+        "bytesScanned": 5859574.0,
+        "estimatedBytesSkipped": 0.0,
+        "logGroupsScanned": 1.0,
+        "resultCount": 2.0
+    },
+    "status": "Complete"
+}

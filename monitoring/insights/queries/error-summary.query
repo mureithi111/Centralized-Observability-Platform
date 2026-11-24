@@ -1,0 +1,4 @@
+fields @timestamp, event_type
+| filter event_type = "application_error" or event_type = "database_error"
+| stats count() as errorCount by event_type
+| sort errorCount desc

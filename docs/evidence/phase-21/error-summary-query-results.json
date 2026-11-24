@@ -1,0 +1,35 @@
+{
+    "queryLanguage": "CWLI",
+    "results": [
+        [
+            {
+                "field": "event_type",
+                "value": "application_error"
+            },
+            {
+                "field": "errorCount",
+                "value": "11"
+            }
+        ],
+        [
+            {
+                "field": "event_type",
+                "value": "database_error"
+            },
+            {
+                "field": "errorCount",
+                "value": "1"
+            }
+        ]
+    ],
+    "statistics": {
+        "recordsMatched": 12.0,
+        "recordsScanned": 22173.0,
+        "estimatedRecordsSkipped": 0.0,
+        "bytesScanned": 5848364.0,
+        "estimatedBytesSkipped": 0.0,
+        "logGroupsScanned": 1.0,
+        "resultCount": 2.0
+    },
+    "status": "Complete"
+}

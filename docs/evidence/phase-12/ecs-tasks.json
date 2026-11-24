@@ -1,0 +1,193 @@
+{
+    "tasks": [
+        {
+            "attachments": [
+                {
+                    "id": "388c42f4-badd-4f6c-b708-ea84d04b0c27",
+                    "type": "ElasticNetworkInterface",
+                    "status": "ATTACHED",
+                    "details": [
+                        {
+                            "name": "subnetId",
+                            "value": "subnet-0b1a37f22e8e76af1"
+                        },
+                        {
+                            "name": "networkInterfaceId",
+                            "value": "eni-039b452267bbfc7c9"
+                        },
+                        {
+                            "name": "macAddress",
+                            "value": "12:ff:e6:dc:ab:a5"
+                        },
+                        {
+                            "name": "privateDnsName",
+                            "value": "ip-10-30-90-217.ec2.internal"
+                        },
+                        {
+                            "name": "privateIPv4Address",
+                            "value": "10.30.90.217"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "ecs.cpu-architecture",
+                    "value": "x86_64"
+                }
+            ],
+            "availabilityZone": "us-east-1b",
+            "clusterArn": "arn:aws:ecs:us-east-1:<account-id>:cluster/observability-cluster",
+            "connectivity": "CONNECTED",
+            "connectivityAt": "2026-11-23T17:10:53.041000+03:00",
+            "containers": [
+                {
+                    "containerArn": "arn:aws:ecs:us-east-1:<account-id>:container/observability-cluster/75b97f6890074fe9bf040d3088284944/e8f6ba2a-851c-48c2-a463-2bb523cc9620",
+                    "taskArn": "arn:aws:ecs:us-east-1:<account-id>:task/observability-cluster/75b97f6890074fe9bf040d3088284944",
+                    "name": "observability-api",
+                    "image": "<account-id>.dkr.ecr.us-east-1.amazonaws.com/observability-api:phase12",
+                    "imageDigest": "sha256:764a05faeed753d0ec63aafed9a03163460ad29569daefce976ae5bb5e2e9024",
+                    "runtimeId": "75b97f6890074fe9bf040d3088284944-3069417163",
+                    "lastStatus": "RUNNING",
+                    "networkBindings": [],
+                    "networkInterfaces": [
+                        {
+                            "attachmentId": "388c42f4-badd-4f6c-b708-ea84d04b0c27",
+                            "privateIpv4Address": "10.30.90.217"
+                        }
+                    ],
+                    "healthStatus": "HEALTHY",
+                    "cpu": "0"
+                }
+            ],
+            "cpu": "512",
+            "createdAt": "2026-11-23T17:10:49.288000+03:00",
+            "desiredStatus": "RUNNING",
+            "enableExecuteCommand": false,
+            "group": "service:observability-api-service",
+            "healthStatus": "HEALTHY",
+            "lastStatus": "RUNNING",
+            "launchType": "FARGATE",
+            "memory": "1024",
+            "overrides": {
+                "containerOverrides": [
+                    {
+                        "name": "observability-api"
+                    }
+                ],
+                "inferenceAcceleratorOverrides": []
+            },
+            "platformVersion": "1.4.0",
+            "platformFamily": "Linux",
+            "pullStartedAt": "2026-11-23T17:11:00.534000+03:00",
+            "pullStoppedAt": "2026-11-23T17:11:05.774000+03:00",
+            "startedAt": "2026-11-23T17:11:06.322000+03:00",
+            "startedBy": "ecs-svc/9966164432403872794",
+            "tags": [],
+            "taskArn": "arn:aws:ecs:us-east-1:<account-id>:task/observability-cluster/75b97f6890074fe9bf040d3088284944",
+            "taskDefinitionArn": "arn:aws:ecs:us-east-1:<account-id>:task-definition/observability-api:1",
+            "version": 4,
+            "ephemeralStorage": {
+                "sizeInGiB": 20
+            },
+            "fargateEphemeralStorage": {
+                "sizeInGiB": 20
+            }
+        },
+        {
+            "attachments": [
+                {
+                    "id": "6ca82a2c-94f0-42d3-b257-5b48010cf253",
+                    "type": "ElasticNetworkInterface",
+                    "status": "ATTACHED",
+                    "details": [
+                        {
+                            "name": "subnetId",
+                            "value": "subnet-08f88583dfbf92cec"
+                        },
+                        {
+                            "name": "networkInterfaceId",
+                            "value": "eni-026a7a033118e14e1"
+                        },
+                        {
+                            "name": "macAddress",
+                            "value": "02:ff:f7:6e:df:ad"
+                        },
+                        {
+                            "name": "privateDnsName",
+                            "value": "ip-10-30-79-227.ec2.internal"
+                        },
+                        {
+                            "name": "privateIPv4Address",
+                            "value": "10.30.79.227"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "ecs.cpu-architecture",
+                    "value": "x86_64"
+                }
+            ],
+            "availabilityZone": "us-east-1a",
+            "clusterArn": "arn:aws:ecs:us-east-1:<account-id>:cluster/observability-cluster",
+            "connectivity": "CONNECTED",
+            "connectivityAt": "2026-11-23T17:11:12.291000+03:00",
+            "containers": [
+                {
+                    "containerArn": "arn:aws:ecs:us-east-1:<account-id>:container/observability-cluster/87b55f1381ae4a798aa1a14807853dac/ff1c1050-d95f-4da3-8717-38d5ab23f568",
+                    "taskArn": "arn:aws:ecs:us-east-1:<account-id>:task/observability-cluster/87b55f1381ae4a798aa1a14807853dac",
+                    "name": "observability-api",
+                    "image": "<account-id>.dkr.ecr.us-east-1.amazonaws.com/observability-api:phase12",
+                    "imageDigest": "sha256:764a05faeed753d0ec63aafed9a03163460ad29569daefce976ae5bb5e2e9024",
+                    "runtimeId": "87b55f1381ae4a798aa1a14807853dac-3069417163",
+                    "lastStatus": "RUNNING",
+                    "networkBindings": [],
+                    "networkInterfaces": [
+                        {
+                            "attachmentId": "6ca82a2c-94f0-42d3-b257-5b48010cf253",
+                            "privateIpv4Address": "10.30.79.227"
+                        }
+                    ],
+                    "healthStatus": "HEALTHY",
+                    "cpu": "0"
+                }
+            ],
+            "cpu": "512",
+            "createdAt": "2026-11-23T17:11:08.577000+03:00",
+            "desiredStatus": "RUNNING",
+            "enableExecuteCommand": false,
+            "group": "service:observability-api-service",
+            "healthStatus": "HEALTHY",
+            "lastStatus": "RUNNING",
+            "launchType": "FARGATE",
+            "memory": "1024",
+            "overrides": {
+                "containerOverrides": [
+                    {
+                        "name": "observability-api"
+                    }
+                ],
+                "inferenceAcceleratorOverrides": []
+            },
+            "platformVersion": "1.4.0",
+            "platformFamily": "Linux",
+            "pullStartedAt": "2026-11-23T17:11:19.667000+03:00",
+            "pullStoppedAt": "2026-11-23T17:11:24.648000+03:00",
+            "startedAt": "2026-11-23T17:11:25.267000+03:00",
+            "startedBy": "ecs-svc/9966164432403872794",
+            "tags": [],
+            "taskArn": "arn:aws:ecs:us-east-1:<account-id>:task/observability-cluster/87b55f1381ae4a798aa1a14807853dac",
+            "taskDefinitionArn": "arn:aws:ecs:us-east-1:<account-id>:task-definition/observability-api:1",
+            "version": 3,
+            "ephemeralStorage": {
+                "sizeInGiB": 20
+            },
+            "fargateEphemeralStorage": {
+                "sizeInGiB": 20
+            }
+        }
+    ],
+    "failures": []
+}

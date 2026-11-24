@@ -1,0 +1,17 @@
+fastapi==0.121.3
+uvicorn[standard]==0.38.0
+SQLAlchemy==2.0.44
+PyMySQL==1.1.2
+cryptography>=42.0.0
+python-dotenv==1.2.1
+python-json-logger==4.0.0
+
+opentelemetry-api==1.38.0
+opentelemetry-sdk==1.38.0
+opentelemetry-exporter-otlp==1.38.0
+opentelemetry-instrumentation-fastapi==0.59b0
+opentelemetry-instrumentation-sqlalchemy==0.59b0
+opentelemetry-instrumentation-logging==0.59b0
+
+pytest==9.0.1
+httpx==0.28.1

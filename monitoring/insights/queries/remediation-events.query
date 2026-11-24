@@ -1,0 +1,4 @@
+fields @timestamp, @message
+| filter @message like /ALARM_TRIGGERED|ALARM_RECOVERY|ECS_SCALE_OUT_REQUESTED|ECS_MAXIMUM_CAPACITY_REACHED|SNS_NOTIFICATION_PUBLISHED/
+| sort @timestamp desc
+| limit 100

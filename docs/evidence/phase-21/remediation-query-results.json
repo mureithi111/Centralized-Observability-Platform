@@ -1,0 +1,141 @@
+{
+    "queryLanguage": "CWLI",
+    "results": [
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 13:17:44.071"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T13:17:44.071Z\tc82ac472-1edf-47cf-9832-9588fe068b09\tINFO\t{\"event\":\"SNS_NOTIFICATION_PUBLISHED\",\"eventType\":\"ALARM_RECOVERY\",\"alarmName\":\"Observability-ALB-HTTP5xx\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgawNCOtAAAAAAHf0vMABrBY5sAAAAPSIAEoiojS7aA0MImK0u2gNDgGQLURSKw5UMUiIAIQAxgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 13:17:43.890"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T13:17:43.890Z\tc82ac472-1edf-47cf-9832-9588fe068b09\tINFO\t{\"event\":\"ALARM_RECOVERY\",\"alarmName\":\"Observability-ALB-HTTP5xx\",\"message\":\"CloudWatch alarm returned to OK.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgawNCOtAAAAAAHf0vMABrBY5sAAAAPSIAEoiojS7aA0MImK0u2gNDgGQLURSKw5UMUiIAIQAhgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 13:17:01.012"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T13:17:01.012Z\t581b9163-a51a-4c2c-926c-e2d2930c7a2a\tINFO\t{\"event\":\"SNS_NOTIFICATION_PUBLISHED\",\"eventType\":\"ALARM_TRIGGERED\",\"alarmName\":\"Observability-ALB-HTTP5xx\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgawSLcoAAAAAAEYfjAABrBY4yAAAAWCIAEojrTP7aA0MOe5z+2gNDgHQK0TSMY7UKQkIAIQBBgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 13:17:00.649"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T13:17:00.649Z\t581b9163-a51a-4c2c-926c-e2d2930c7a2a\tERROR\t{\"event\":\"ALARM_TRIGGERED\",\"alarmName\":\"Observability-ALB-HTTP5xx\",\"message\":\"A monitored CloudWatch alarm entered ALARM state.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgawSLcoAAAAAAEYfjAABrBY4yAAAAWCIAEojrTP7aA0MOe5z+2gNDgHQK0TSMY7UKQkIAIQAxgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 12:52:38.276"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T12:52:38.276Z\t923fab15-c10a-47cf-8f8c-549d517150d3\tINFO\t{\"event\":\"ALARM_RECOVERY\",\"alarmName\":\"Observability-ALB-HTTP5xx\",\"message\":\"CloudWatch alarm returned to OK.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgawSLcoAAAAAAES0AwABrBYiEAAAAWCIAEog5b27KA0MIiW9uygNDgFQPQPSIk4UM8hIAIQAhgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 12:51:31.719"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T12:51:31.719Z\tde048559-add6-434e-b264-8c6e25874680\tINFO\t{\"event\":\"ALARM_RECOVERY\",\"alarmName\":\"Observability-ApplicationErrorCount\",\"message\":\"CloudWatch alarm returned to OK.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgawNCOtAAAAAAHa4XgABrBYhNAAAAPSIAEog47y7KA0MLGO8uygNDgFQI0QSPs4UNshIAIQAhgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 12:51:00.520"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T12:51:00.520Z\t499adac2-d5a5-44ad-986f-59ab6e2f13e8\tERROR\t{\"event\":\"ALARM_TRIGGERED\",\"alarmName\":\"Observability-ApplicationErrorCount\",\"message\":\"A monitored CloudWatch alarm entered ALARM state.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgar8TGQAAAAAZ5PQQAABrBYgVAAAAcCIAEo5frv7KA0MKqa8OygNDgKQKkgSNpAUMYoIAIQBxgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 12:50:56.521"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T12:50:56.521Z\t63e9a240-a7b7-4722-bec5-3fa37e66db59\tERROR\t{\"event\":\"ALARM_TRIGGERED\",\"alarmName\":\"Observability-ALB-HTTP5xx\",\"message\":\"A monitored CloudWatch alarm entered ALARM state.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAgar8TGQAAAAAZ5PQQAABrBYgVAAAAcCIAEo5frv7KA0MKqa8OygNDgKQKkgSNpAUMYoIAIQAhgB"
+            }
+        ],
+        [
+            {
+                "field": "@timestamp",
+                "value": "2026-11-24 12:45:39.942"
+            },
+            {
+                "field": "@message",
+                "value": "2026-11-24T12:45:39.942Z\t1bd383f4-39e5-4046-8241-1e574d6490c2\tINFO\t{\"event\":\"ALARM_RECOVERY\",\"alarmName\":\"Observability-ECS-HighCPU\",\"message\":\"CloudWatch alarm returned to OK.\"}\n"
+            },
+            {
+                "field": "@ptr",
+                "value": "CrYBCnsKODM0NTU0OTM1NjI5MDovYXdzL2xhbWJkYS9vYnNlcnZhYmlsaXR5LWFsYXJtLXJlbWVkaWF0aW9uEAAaJDc0ZTJkZGVhLTg0ODMtNGI5My05ODI5LWMwYzZlYWViN2IzMCIOCMTK2OygNBC33abuoDRAxMrY7KA0SAASNRoYAganqk3QAAAAAI7RDwYABrBYaWAAAAACIAEo5JnY7KA0MOjR3OygNDgNQO4oSMRKUJgwIAIQChgB"
+            }
+        ]
+    ],
+    "statistics": {
+        "recordsMatched": 9.0,
+        "recordsScanned": 46.0,
+        "estimatedRecordsSkipped": 0.0,
+        "bytesScanned": 18170.0,
+        "estimatedBytesSkipped": 0.0,
+        "logGroupsScanned": 1.0,
+        "resultCount": 9.0
+    },
+    "status": "Complete"
+}

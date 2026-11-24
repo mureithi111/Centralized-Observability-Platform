@@ -1,0 +1,276 @@
+{
+  "widgets": [
+    {
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 2,
+      "properties": {
+        "markdown": "# Centralized Observability Platform\n### Application Health | ECS Performance | ALB Traffic | Errors | Automated Remediation"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 2,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "ECS CPU Utilization",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/ECS",
+            "CPUUtilization",
+            "ClusterName",
+            "observability-cluster",
+            "ServiceName",
+            "observability-api-service"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 8,
+      "y": 2,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "ECS Memory Utilization",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/ECS",
+            "MemoryUtilization",
+            "ClusterName",
+            "observability-cluster",
+            "ServiceName",
+            "observability-api-service"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 16,
+      "y": 2,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "ALB Request Count",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Sum",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/ApplicationELB",
+            "RequestCount",
+            "LoadBalancer",
+            "app/observability-web-alb/91dadcc285c9eebf"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 8,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "ALB HTTP 5xx Errors",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Sum",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/ApplicationELB",
+            "HTTPCode_ELB_5XX_Count",
+            "LoadBalancer",
+            "app/observability-web-alb/91dadcc285c9eebf"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 8,
+      "y": 8,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "Application Error Count",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Sum",
+        "period": 300,
+        "metrics": [
+          [
+            "CentralizedObservability",
+            "ErrorCount",
+            "Service",
+            "centralized-observability-api",
+            "Environment",
+            "production"
+          ],
+          [
+            "CentralizedObservability",
+            "ApplicationErrorCount"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 16,
+      "y": 8,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "Database and HTTP Errors",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Sum",
+        "period": 300,
+        "metrics": [
+          [
+            "CentralizedObservability",
+            "DatabaseErrorCount"
+          ],
+          [
+            "CentralizedObservability",
+            "Http5xxCount"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 14,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "Remediation Lambda Invocations",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Sum",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "observability-alarm-remediation"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 8,
+      "y": 14,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "Remediation Lambda Errors",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Sum",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Errors",
+            "FunctionName",
+            "observability-alarm-remediation"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 16,
+      "y": 14,
+      "width": 8,
+      "height": 6,
+      "properties": {
+        "title": "Remediation Lambda Duration",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Duration",
+            "FunctionName",
+            "observability-alarm-remediation"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "alarm",
+      "x": 0,
+      "y": 20,
+      "width": 24,
+      "height": 6,
+      "properties": {
+        "title": "CloudWatch Alarm Status",
+        "alarms": [
+          "arn:aws:cloudwatch:us-east-1:345549356290:alarm:Observability-ALB-HTTP5xx",
+          "arn:aws:cloudwatch:us-east-1:345549356290:alarm:Observability-ApplicationErrorCount",
+          "arn:aws:cloudwatch:us-east-1:345549356290:alarm:Observability-ApplicationErrors",
+          "arn:aws:cloudwatch:us-east-1:345549356290:alarm:Observability-DatabaseErrors",
+          "arn:aws:cloudwatch:us-east-1:345549356290:alarm:Observability-ECS-HighCPU",
+          "arn:aws:cloudwatch:us-east-1:345549356290:alarm:Observability-Http5xxErrors"
+        ]
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 26,
+      "width": 24,
+      "height": 6,
+      "properties": {
+        "title": "RDS MySQL Health",
+        "region": "us-east-1",
+        "view": "timeSeries",
+        "stat": "Average",
+        "period": 300,
+        "metrics": [
+          [
+            "AWS/RDS",
+            "CPUUtilization",
+            "DBInstanceIdentifier",
+            "observability-mysql"
+          ],
+          [
+            "AWS/RDS",
+            "DatabaseConnections",
+            "DBInstanceIdentifier",
+            "observability-mysql"
+          ],
+          [
+            "AWS/RDS",
+            "FreeStorageSpace",
+            "DBInstanceIdentifier",
+            "observability-mysql"
+          ]
+        ]
+      }
+    }
+  ]
+}
