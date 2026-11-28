@@ -25,6 +25,11 @@ The infrastructure is deployed in AWS Region `us-east-1` using AWS CDK.
 
 ## 2. Architecture
 
+### Application Architecture
+
+![Observability-as-a-Service Architecture](docs/architecture/AWS%20Observability%20Architecture%20Overview.png)
+
+
 The solution follows this operational flow:
 
 1. Users access the application through the Application Load Balancer.
